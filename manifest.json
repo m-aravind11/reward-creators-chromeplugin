@@ -1,0 +1,22 @@
+{
+    "name": "PayEZ",
+    "description": "Reward your content creators easily",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+      },
+
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["*://*/*"],
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icon": {
+            "128": "./logo.png"
+        }
+      },
+    "icons": {
+        "128": "./logo.png"
+    },
+    "options_page": "./options.html"
+}
